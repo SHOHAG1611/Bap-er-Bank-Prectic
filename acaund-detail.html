@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl  text-center p-8 mt-8">Money Den <span class="font-semibold text-amber-500">Taka
+                Nen
+                !!</span></h1>
+    </header>
+    <main class="mx-auto w-3/4 ">
+        <!-- Balance-Deposit-Widrhdraw section  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-8 text-white ">
+                <div class="bg-blue-400  rounded p-8 ">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-4xl">$<span id="deposit-total">00</span></h4>
+                </div>
+                <div class="bg-green-400  rounded p-8">
+                    <h3 class="text-2xl">Widthdraw</h3>
+                    <h4 class="text-4xl">$<span id="Widthdraw-total">00</span></h4>
+                </div>
+                <div class="bg-yellow-400  rounded p-8 ">
+                    <h3 class="text-2xl">Main-Balance</h3>
+                    <h4 class="text-4xl">$<span id="Main-Balance">1200</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Widthdraw section  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="bg-purple-400">
+                    <h3 class="text-2xl ml-8 mb-4 pt-4 text-white">Please Deposit</h3>
+                    <div>
+                        <input id="deposit-input" class="border-4 border-indigo-600 mb-4 rounded-md w-3/4 px-4 mx-8 block
+                            " type="text" placeholder="$ Enter Your Money">
+                        <button id="deposit-button"
+                            class="mx-8 bg-amber-400 font-semibold text-white px-4 py-2 rounded mb-8">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-sky-300">
+                    <h3 class="text-2xl ml-8 mb-4 pt-4 text-white">Widthdraw Your Money</h3>
+                    <div>
+                        <input id="widthdraw-input" class="border-4 border-indigo-600 mb-4 rounded-md w-3/4 px-4 mx-8 block
+                            " type="text" placeholder="$ Enter Your Widthdraw Amound">
+                        <button id="widthdraw-button"
+                            class="mx-8 bg-amber-400 font-semibold text-white px-4 py-2 rounded mb-8">Widthdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/acaunding.js"></script>
+</body>
+
+</html>
